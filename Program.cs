@@ -8,6 +8,7 @@ namespace Serializer
         {
             RootDescriptor<Person> rootDesc = GetPersonDescriptor();
 
+
             var czechRepublic = new Country {Name = "Czech Republic", AreaCode = 420};
             var person = new Person
             {
@@ -18,6 +19,7 @@ namespace Serializer
                 CitizenOf = czechRepublic,
                 MobilePhone = new PhoneNumber {Country = czechRepublic, Number = 123456789}
             };
+            rootDesc.Serialize(Console.Out,person);
         }
 
         static RootDescriptor<Person> GetPersonDescriptor()

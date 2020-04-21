@@ -10,6 +10,6 @@ namespace Serializer
         Address,
         Country,
         PhoneNumber,
-
+        Citizen,
     }
 }

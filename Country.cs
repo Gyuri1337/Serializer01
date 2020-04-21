@@ -8,9 +8,6 @@ namespace Serializer
     {
         public string Name { get; set; }
         public int AreaCode { get; set; }
-        static RootDescriptor<PhoneNumber> getCountryDescriptor()
-        {
-            return new RootDescriptor<PhoneNumber>(PersonModelTypes.Country);
-        }
+        
     }
 }

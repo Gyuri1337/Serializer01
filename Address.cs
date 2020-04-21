@@ -8,9 +8,6 @@ namespace Serializer
     {
         public string Street { get; set; }
         public string City { get; set; }
-        static RootDescriptor<PhoneNumber> getAddressDescriptor()
-        {
-            return new RootDescriptor<PhoneNumber>(PersonModelTypes.Address);
-        }
+        
     }
 }
